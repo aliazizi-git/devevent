@@ -26,7 +26,7 @@ const EventCard = ({
       <Image
         src={image}
         alt={title}
-        width={420}
+        width={410}
         height={300}
         className="poster"
       />
