@@ -5,12 +5,12 @@ import LightRays from "@/Components/LightRays";
 import Navbar from "@/Components/Navbar";
 
 const schibstedGrotesk = Schibsted_Grotesk({
-  variable: "--font-geist-sans",
+  variable: "--font-schibsted-grotesk",
   subsets: ["latin"],
 });
 
 const martianMono = Martian_Mono({
-  variable: "--font-geist-mono",
+  variable: "--font-martian-mono",
   subsets: ["latin"],
 });
 
@@ -24,9 +24,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html
       lang="en"
     >
-      <body className={`${schibstedGrotesk.variable} ${martianMono.variable} h-full antialiased`}>
-        <div className="absolute inset-0 top-0 z-[-1] min-h-screen">
-                <Navbar />
+      <body className={`${schibstedGrotesk.variable} ${martianMono.variable} antialiased`}>
+        <div className="fixed inset-0 z-[-1] min-h-screen">
+                
 
           <LightRays
             raysOrigin="top-center-offset"
@@ -44,6 +44,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             saturation={1}
           />
           </div>
+          <Navbar />
         <main>
          
           {children}
