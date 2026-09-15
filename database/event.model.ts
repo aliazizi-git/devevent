@@ -2,6 +2,7 @@ import { Schema, model, models, Document } from 'mongoose';
 
 // TypeScript interface for Event document
 export interface IEvent extends Document {
+  id: string;
   title: string;
   slug: string;
   description: string;
@@ -16,6 +17,7 @@ export interface IEvent extends Document {
   agenda: string[];
   organizer: string;
   tags: string[];
+   type?: string;  
   createdAt: Date;
   updatedAt: Date;
 }

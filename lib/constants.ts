@@ -55,7 +55,7 @@ export const events = [
       "Google's annual event for developers featuring product announcements, technical talks, and practical workshops.",
   },
   {
-    title: "React Summit",
+  title: "React Summit",
     slug: "react-summit",
     image: "/images/event6.png",
     date: "June 2026",

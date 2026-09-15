@@ -22,7 +22,7 @@ const EventCard = ({
   description,
 }: Props) => {
   return (
-    <Link href={"/events"} id="event-card">
+    <Link href={`/events/${slug}`} id="event-card">
       <Image
         src={image}
         alt={title}
